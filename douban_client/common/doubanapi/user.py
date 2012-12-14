@@ -67,6 +67,6 @@ class User(object):
 if __name__ == "__main__":
 
     user = User()
-    #print user.me
+    print user.me
     #print user.get('cnny-leon')
     print user.query_user('cnny-leon', 0, 100)

@@ -26,9 +26,9 @@ def getAccess(type, code):
                 'client_secret' : 'b6a45d07d205cd14',
                 'redirect_uri' : 'http://site.douban.com/196738/',
                 'grant_type' : 'authorization_code',
+                'authorization_code': "d5c0c5d130f45707",
                 'refresh_token' : code
                 }
-
 
     headers = {"Content-Type" : "application/x-www-form-urlencoded"}
 
@@ -48,4 +48,4 @@ def getAccess(type, code):
 if __name__ == "__main__":
 
     code = raw_input("input the authorization_code >>")
-    print getAccess('_code_', code)
+    print getAccess('_token_', code)
